@@ -1,0 +1,16 @@
+FTP Account - Crazydomain
+1. Host: doctorsatknox.com.au
+2. User: backup@doctorsatknox.com.au
+3. Pw: 0402329029
+
+
+
+/* Create Task Schedule */
+"C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\SQLCMD.EXE" -i "C:\CorumBackups\Lots\AnalyticsTeam\t-tranc-backup.sql"
+
+"C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\SQLCMD.EXE" - i "E:\Dropbox\WORK\Knox Folder\Vinh's\Data Centre\tools\scripts\backup.sql"
+
+"C:\LOTS\analytics\scripts\backup.bat"
+
+# Run Script from Command Line
+sqlcmd -S QVPHA1\QVPHA1 -i E:\Dropbox\WORK\Knox Folder\Vinh's\Data Centre\tools\scripts\backup.sql
